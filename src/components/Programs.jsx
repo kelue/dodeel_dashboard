@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import Container from "./Container";
+import Heading from "./Heading";
 
 const StyledPrograms = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3.2rem;
   margin-bottom: 2.4rem;
+  margin-top: 2.4rem;
 `;
 
 const ProgramBox = styled.div`
@@ -17,9 +19,13 @@ const ProgramBox = styled.div`
   grid-template-rows: 30fr auto;
 `;
 
-const ProgramBoxImage = styled.img``;
+const ProgramBoxImage = styled.img`
+  width: 100%;
+  max-height: 25rem;
+`;
 
 const ProgramContent = styled.div`
+  font-size: 1.4rem;
   padding: 2rem 1.6rem;
 `;
 
@@ -39,6 +45,7 @@ const ButtonText = styled.button`
 function Programs() {
   return (
     <Container>
+      <Heading as="h4">Our Programs</Heading>
       <StyledPrograms>
         <ProgramBox>
           <ProgramBoxImage src="iuliu-illes-r95_fsX66sc-unsplash.jpg"></ProgramBoxImage>
