@@ -5,6 +5,7 @@ import Attributes from "./components/Attributes";
 import Programs from "./components/Programs";
 import PartOfUs from "./components/PartOfUs";
 import Gallery from "./components/Gallery";
+import Accordion from "./components/Accordion";
 
 const StyledApp = styled.div``;
 
@@ -17,6 +18,7 @@ function App() {
       <PartOfUs />
       <Programs />
       <Gallery />
+      <Accordion />
     </StyledApp>
   );
 }
