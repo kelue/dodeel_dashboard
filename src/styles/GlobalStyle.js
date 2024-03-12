@@ -94,6 +94,7 @@ const GlobalStyles = createGlobalStyle`
   --border-radius-sm: 5px;
   --border-radius-md: 7px;
   --border-radius-lg: 9px;
+  height: 100%;
 }
 
 *,
@@ -114,9 +115,10 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: var(--color-grey-700);
+  margin: 0;
 
-  transition: color 0.3s, background-color 0.3s;
-  min-height: 100vh;
+  transition: all 0.3s;
+  min-height: 100dvh;
   line-height: 1.5;
   font-size: 1.6rem;
 }
@@ -146,7 +148,7 @@ input:focus,
 button:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid var(--color-brand-600);
+  outline: 1px solid green;
   outline-offset: -1px;
 }
 
@@ -164,7 +166,7 @@ ul {
   list-style: none;
 }
 
-p,
+/* p,
 h1,
 h2,
 h3,
@@ -173,7 +175,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
-}
+} */
 
 `;
 

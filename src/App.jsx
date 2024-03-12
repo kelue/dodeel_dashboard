@@ -6,6 +6,7 @@ import Programs from "./components/Programs";
 import PartOfUs from "./components/PartOfUs";
 import Gallery from "./components/Gallery";
 import Accordion from "./components/Accordion";
+import Footer from "./components/Footer";
 
 const StyledApp = styled.div``;
 
@@ -19,6 +20,7 @@ function App() {
       <Programs />
       <Gallery />
       <Accordion />
+      <Footer />
     </StyledApp>
   );
 }

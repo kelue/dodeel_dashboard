@@ -12,6 +12,12 @@ const sizes = {
     border-radius: var(--border-radius-lg);
     font-size: 1.6rem;
   `,
+
+  large: css`
+    border-radius: var(--border-radius-md);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  `,
 };
 
 const variation = {
@@ -24,6 +30,11 @@ const variation = {
     border: 1px solid green;
     background-color: transparent;
     color: green;
+  `,
+  alternate: css`
+    background-color: green;
+    color: white;
+    text-align: center;
   `,
 };
 
