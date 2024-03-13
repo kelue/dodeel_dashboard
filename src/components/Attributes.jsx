@@ -75,7 +75,7 @@ function Attributes() {
   return (
     <Container>
       <StyledAttributes>
-        <h2>What We Stand For</h2>
+        <Heading as="h4">What We Stand For</Heading>
         <p>
           Our CDS group, proudly backed by Mind the Gap has several initiatives
           for social impact

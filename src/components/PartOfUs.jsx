@@ -18,6 +18,7 @@ const StepsContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding: 0 4.8rem 0 0;
 `;
 
 const Steps = styled.div`

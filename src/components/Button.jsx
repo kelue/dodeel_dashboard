@@ -44,6 +44,16 @@ const Button = styled.button`
 
   ${(props) => sizes[props.$size]}
   ${(props) => variation[props.$variation]}
+
+  ${(props) =>
+    props.$user &&
+    css`
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.8rem;
+      padding: 1rem 1.6rem;
+    `}
 `;
 
 Button.defaultProps = {

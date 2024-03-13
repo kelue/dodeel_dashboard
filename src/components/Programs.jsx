@@ -29,6 +29,11 @@ const ProgramContent = styled.div`
   padding: 2rem 1.6rem;
 `;
 
+const ProgramText = styled.p`
+  font-size: 1.4rem;
+  padding-bottom: 1.6rem;
+`;
+
 const ButtonText = styled.button`
   color: var(--color-grey-500);
   font-weight: 500;
@@ -50,45 +55,45 @@ function Programs() {
         <ProgramBox>
           <ProgramBoxImage src="iuliu-illes-r95_fsX66sc-unsplash.jpg"></ProgramBoxImage>
           <ProgramContent>
-            <h4>Business Onboarding on Google</h4>
-            <p>
+            <Heading as="h5">Business Onboarding on Google</Heading>
+            <ProgramText>
               This was aimed at enhancing the online visibility of neighbourhood
               enterprises through Google. Our CDS initiated an onboarding
               process to ensure that local businesses within our community were
               effectively listed on Google. It also involved guiding these
               business owners through the steps of optimizing Google My Business
               profiles.{" "}
-            </p>
+            </ProgramText>
             <ButtonText>READ MORE</ButtonText>
           </ProgramContent>
         </ProgramBox>
         <ProgramBox>
           <ProgramBoxImage src="iuliu-illes-r95_fsX66sc-unsplash.jpg"></ProgramBoxImage>
           <ProgramContent>
-            <h4>Business Onboarding on Google</h4>
-            <p>
-              This was aimed at enhancing the online visibility of neighbourhood
-              enterprises through Google. Our CDS initiated an onboarding
-              process to ensure that local businesses within our community were
-              effectively listed on Google. It also involved guiding these
-              business owners through the steps of optimizing Google My Business
-              profiles.{" "}
-            </p>
+            <Heading as="h5">Monitoring Project</Heading>
+            <ProgramText>
+              We initiated a school adoption project to enhance digital literacy
+              among students in local schools. The members of the CDS
+              facilitated trainings for students in different secondary schools
+              on the importance of digital literacy. This project not only
+              empowered students with basic digital skills but also established
+              a foundation to prepare them for the digital era.
+            </ProgramText>
             <ButtonText>READ MORE</ButtonText>
           </ProgramContent>
         </ProgramBox>
         <ProgramBox>
           <ProgramBoxImage src="iuliu-illes-r95_fsX66sc-unsplash.jpg"></ProgramBoxImage>
           <ProgramContent>
-            <h4>Business Onboarding on Google</h4>
-            <p>
+            <Heading as="h5">Business Onboarding on Google</Heading>
+            <ProgramText>
               This was aimed at enhancing the online visibility of neighbourhood
               enterprises through Google. Our CDS initiated an onboarding
               process to ensure that local businesses within our community were
               effectively listed on Google. It also involved guiding these
               business owners through the steps of optimizing Google My Business
               profiles.{" "}
-            </p>
+            </ProgramText>
             <ButtonText>READ MORE</ButtonText>
           </ProgramContent>
         </ProgramBox>

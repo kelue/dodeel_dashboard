@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Container from "./Container";
 import Heading from "./Heading";
 import { useState } from "react";
+import { FaPlus } from "react-icons/fa6";
+import { FaMinus } from "react-icons/fa";
 
 const StyledAccordionContainer = styled.section`
   display: grid;
@@ -39,6 +41,7 @@ const StyledAccordion = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  padding: 0 4.8rem;
 `;
 
 const AccordionItem = styled.div`
@@ -64,7 +67,7 @@ const IconBox = styled.div`
   height: 2.4rem;
   width: 2.4rem;
   border-radius: 50%;
-  border: 3px solid green;
+  border: 2.5px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,6 +80,7 @@ const IconBox = styled.div`
 
 const Icon = styled.p`
   font-size: 1.6rem;
+  font-size: 1rem;
   color: green;
 `;
 
@@ -162,7 +166,7 @@ function AccordionItems({ titles, curOpen, onOpen, children, num }) {
       <Title>{titles}</Title>
       <IconBox className={isOpen ? "active" : ""}>
         {" "}
-        <Icon>{isOpen ? "-" : "+"}</Icon>
+        <Icon>{isOpen ? <FaMinus /> : <FaPlus />}</Icon>
       </IconBox>
       {isOpen && <ContentBox>{children}</ContentBox>}
     </AccordionItem>

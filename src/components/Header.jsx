@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import Button from "./Button";
+import { FiUser } from "react-icons/fi";
 
 const StyledHeader = styled.header`
   background-color: transparent;
   display: flex;
   margin: 0 auto;
-  max-width: 130rem;
+  max-width: 140rem;
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
@@ -41,8 +42,8 @@ function Header() {
         ))}
       </StyledMenu>
       <ButtonContainer>
-        <Button $size="medium" $variation="secondary">
-          My Account
+        <Button $size="medium" $variation="secondary" $user="true">
+          <FiUser /> <p>My Account</p>
         </Button>
         <Button $size="medium" $variation="primary">
           Sign up
